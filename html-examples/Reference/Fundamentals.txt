@@ -1,0 +1,92 @@
+Server Side Rendering Apps 
+====
+ HTML + CSS + JS + Backend Code 
+    
+Server: Apache, Tomcat, jBOSS, IIS, Websphere 
+
+Characteristics
+===
+Refreshes the page
+Server has to do the heavy lifting 
+        (html, css, js + backend + db) 
+high bandwidth consumption 
+slow 
+entire page content will be with html, css, js, and data combined 
+
+Client Side Rendering Apps
+=====
+HTML, CSS, JS (run separately in a server port may be 4200 )
+BAckend ( run in another server --port may be 8080)
+Data will be in JSON format 
+
+Characteristics
+===
+Page wil not refresh 
+One server powering up the front end & another for backend 
+Initial load will take time
+Better User Experience 
+
+
+
+Browser 
+====
+HTML Renderer 
+    Line by line execution 
+
+CSS Parser 
+    Line by line executio and char by char 
+    impacts the html elements 
+
+JavaScript  Engine 
+    JS Parser 
+    Executing Synchronously -- one line of code at one moment
+
+
+Front End Tech
+=====
+Structural layer 
+    HTML 
+
+Presentation Layer 
+    CSS
+
+Interaction Layer 
+    JS 
+
+Skeleton = HTML 
+Dressing up = CSS
+Actions = JS 
+Flesh = Data ( from Backend )
+
+HTML
+===
+Hypertext Markup Language 
+Hypertext? 
+    Text + Multimedia served over Web 
+HTTP 
+    rulebook for How the hypertext should be 
+    transfered to the browser
+
+HTTPS  = HTTP + SSL 
+    Web commn over https secure 
+    Encryption 
+
+===
+evolved from XML
+
+Elements
+====
+1. Block level Elements 
+    h1 to h6 
+2. Inline Elements 
+
+
+
+Meta Tag
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="description" content="Full Stack Development with HTML, CSS, JavaScript, Angular, ReactJS and Java Stack">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+
