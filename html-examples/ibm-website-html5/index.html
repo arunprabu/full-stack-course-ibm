@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IBM Official Website by Arun</title>
+</head>
+<body>
+    <header>
+        <img src="images/ibm-logo.png" alt="IBM Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signin.html">Log In</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+        <span>Search: 
+            <input 
+            type="search" name="searchInput"
+            placeholder="Enter your search query here">
+        </span>
+        <hr>
+    </header>
+
+    <main>
+        <h4>International Business Machines Corporation is an American multinational information technology company </h4>
+        <h1>Download Tools from IBM</h1>
+        <button type="button">Download for Windows</button>
+        <button type="button">Download for Mac</button>
+
+        <h4>Watch a Short Video to understand more about IBM </h4>
+        
+        <video width="400" height="300" autoplay>
+            <source src="videos/example.mp4" type="video/mp4">
+            Your browser doesn't support playing video
+        </video>
+
+        <audio width="400" height="300" autoplay>
+            <source src="audios/example.mp3" type="audio/mp3">
+            Your browser doesn't support playing audio
+        </audio>
+
+        <p>Here comes SVG</p>
+        <svg width="100" height="100">
+            <circle cx="50" 
+                cy="50" 
+                r="40" 
+                stroke="green" 
+                stroke-width="4" 
+                fill="yellow" />
+
+        </svg>
+
+        <p>Canvas</p>
+
+        <canvas id="myCanvas" width="200" height="200">
+            <!-- Refer the below JS code -->
+        </canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(50, 100, 100, 0, 200 * Math.PI);
+            ctx.stroke();
+        </script>
+
+        <script>
+            if(localStorage){
+                localStorage.setItem("year", "2019");
+                localStorage.setItem("course", "html, css, js");
+            }
+            
+            if(sessionStorage){
+                sessionStorage.setItem("user", "arun");
+            }
+        </script>
+
+
+
+        <p>HTML5 API's</p>
+        <p>Click the button to get your coordinates.</p>
+
+        <button onclick="getLocation()">Get Current Location</button>
+        <p id="geoPosition"></p>
+
+        <script>
+            var geoCoords = document.getElementById("geoPosition");
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition, errorInPermission);
+                } 
+            }
+
+            function showPosition(position) {
+                geoCoords.innerHTML = "Latitude: " + position.coords.latitude + 
+                "<br>Longitude: " + position.coords.longitude;
+            }
+
+            function errorInPermission(error){
+                console.log(error);
+                alert(error.message);
+            }
+        </script>
+
+        <p>Drag and Drop API</p>
+
+        <p>Drag the image from here and drop in the box below</p>
+        <div id="div1" 
+            ondrop="drop(event)" 
+            ondragover="allowDrop(event)" 
+            style="background: yellow; width: 400px; height: 100px;">
+        <img id="drag1" 
+            src="images/ibm-logo.png" 
+            draggable="true" 
+            ondragstart="drag(event)" width="336" height="69">
+        </div>
+        
+        <p>Drop the image here and then you can drag and drop in above box also</p>
+        <div id="div2" 
+            ondrop="drop(event)" 
+            ondragover="allowDrop(event)" 
+            style="background: red; 
+            border:solid 1px red; 
+            height:200px;"></div>
+
+        <script>
+            function drag(evt) {
+                evt.dataTransfer.setData("text", evt.target.id);
+            }
+
+            function allowDrop(evt) {
+                evt.preventDefault();
+            }
+
+            function drop(evt) {
+                evt.preventDefault();
+                var data = evt.dataTransfer.getData("text");
+                evt.target.appendChild(document.getElementById(data));
+            }
+
+        </script>
+
+
+    </main>
+
+    <footer>
+        <!-- unordered list -->
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Log In</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+        </nav>
+        <p>Copyright &copy; 2019</p>
+    </footer>
+
+
+</body>
+</html>

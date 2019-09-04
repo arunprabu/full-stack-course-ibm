@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/ibm-logo.png" alt="IBM Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signin.html">Log In</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+
+    <main>
+        <h1>Sign Up</h1>
+        <form action="formSubmission.php" method="get" autocomplete>
+            <div>
+                <label for="fullName">Enter Full Name <sup>*</sup> : </label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name here" required
+                    autofocus>
+            </div>
+
+            <div>
+                <label for="email">Enter E-Mail <sup>*</sup>: </label>
+                <input type="email" id="email" 
+                pattern=".+@ibm.com" name="email" 
+                placeholder="Enter your IBM email"
+                    required> <br>
+            </div>
+
+            <div>
+                <label for="password">Enter Password <sup>*</sup> : </label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div>
+                <label for="password">Enter Password again<sup>*</sup> : </label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter your password" required>
+            </div>
+            
+            <div>
+                <label for="phone">Enter Phone Number: <sup>*</sup> : </label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your Phone" required>
+            </div>
+
+            <div>
+                <label for="dob">Enter DOB: <sup>*</sup> : </label>
+                <input type="date" id="dob" name="dob" 
+                placeholder="Enter your DOB" required>
+            </div>
+            
+            <div>
+                <label for="favColor">Choose Favorite Color: <sup>*</sup> : </label>
+                <input type="color" id="favColor" name="favColor" 
+                placeholder="Select your Favorite Color" required>
+            </div>
+
+            <div>
+                <label for="linkedInProfileUrl">Linked In Profile URL: <sup>*</sup> : </label>
+                <input type="url" id="linkedInProfileUrl" name="linkedInProfileUrl" 
+                placeholder="Select your LinkedIn URL with http" required>
+            </div>
+
+            <div>
+                <label for="whoseFan">Whose fan are you? : <sup>*</sup> : </label>
+                <input type="radio" id="whoseFan" 
+                    name="whoseFan" value="juslin"> Justin Bieber
+                <input type="radio" id="whoseFan" 
+                    name="whoseFan" value="taylorSwift"> Taylor Swift
+            </div>
+            
+            <div>
+                <label for="experience">Experience: <sup>*</sup> : </label>
+                <input type="range" id="experience" 
+                name="experience" 
+                min="0" max="40"
+                step="5"
+                required>
+            </div>
+    
+            <div>
+                <label for="techILike">What Tech do you like?</label>
+                <input list="technologiesList" id="techILike" 
+                name="techILike" >
+
+                <datalist id="technologiesList">
+                    <option value="Front End">HTML, CSS, JS</option>
+                    <option value="Back End">Java, Python, PHP, DotNet, Ruby, Perl, NodeJS</option>
+                    <option value="Database">
+                    <option value="Cloud">
+                    <option value="ERP">
+                </datalist>
+            </div>
+
+            <div>
+                <input type="hidden" name="location" value="bangalore">
+                <input type="hidden" name="passedOut" value="2019">
+            </div>
+
+            <div>
+                <input type="submit" value="Sign Up">
+                <p>Already have an account? <a href="signup.html">Sign up here</a></p>
+            </div>
+
+            <br>
+
+            <br>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </form>
+    </main>
+</body>
+
+</html>

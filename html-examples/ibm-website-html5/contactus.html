@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact the Team at IBM</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/ibm-logo.png" alt="IBM Logo">
+        <nav>
+            <!-- unordered list -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signin.html">Log In</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Contact us -- fill in the form below</h1>
+
+        <form action="formSubmission.php" method="post" autocomplete="on">
+            <div>
+                <label for="fullName">Enter Full Name <sup>*</sup> :  </label>
+                <input type="text" id="fullName" 
+                    name="fullName" 
+                    placeholder="Enter your full name here"
+                    required autofocus >
+            </div>
+
+            <div>
+                <label for="email">Enter E-Mail <sup>*</sup>: </label>
+                <input type="email" id="email" pattern=".+@ibm.com"
+                name="email" placeholder="Enter your valid email" required> <br>
+            </div>
+
+            <div>
+                <label for="telephone">Enter Phone Number <sup>*</sup>: </label>
+                <input type="tel" id="telephone"
+                    placeholder="Max 10 digits pls" 
+                    name="telephone" required minlength="8" maxlength="10"> <br>
+            </div>
+
+            <div>
+                <label for="age">Enter Age <sup>*</sup>: </label>
+                <input type="number" id="age" name="age" 
+                    required min="18" max="100" 
+                    step="1"> <br>
+            </div>
+            
+            <div>
+                <label for="typeOfQuery">Choose Type of Query: </label>
+                <select id="typeOfQuery" name="typeOfQuery" required>
+                    <option value="">--Select any one--</option>
+                    <option value="1">Business Consulting</option>
+                    <option value="2">Software Support</option>
+                    <option value="3">Reporting Issues in Software</option>
+                    <option value="4">Investor Related</option>
+                    <option value="5">Media Relations</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="query">Enter the Query:</label>
+                <textarea id="query" name="query"></textarea>
+            </div>
+
+            <div>
+                <button type="reset">Reset</button>
+                <input type="submit" value="Send Query">
+            </div>
+
+        </form>
+
+        <p>We are here</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.790106474536!2d77.61797831471793!3d13.049028190805103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1765236c336f%3A0x22254ae8af264cd5!2sIBM%20India%20D3%20Block!5e0!3m2!1sen!2sin!4v1567596772860!5m2!1sen!2sin" 
+            width="600" height="450" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen=""></iframe>
+
+    </main>
+
+
+
+</body>
+
+</html>

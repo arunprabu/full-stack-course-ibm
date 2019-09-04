@@ -90,3 +90,51 @@ Meta Tag
 <link rel="stylesheet" href="/w3css/4/w3.css">
 <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
 
+Images Types
+=====
+1. Raster Images 
+    fixed width n height
+    pixelate when you zoom 
+    format: png (portable network graphics), 
+            jpg (joint photographic experts group), jpeg, 
+            gif (graphics interchange format), 
+            tiff 
+2. Vector Images 
+    no fixed width n height
+    will not pixelate when you zoom 
+    format: svg ( scalable vector graphics)
+
+HTML5 Multimedia 
+    Video
+    Audio 
+HTML5 Graphics
+    HTML5 Canvas 
+    HTML5 SVG's 
+HTML 5 API's 
+    WebStorage 
+        There's storage space in the browser, 
+        in which you can store the data
+         
+        unlimited storage 
+        1. LocalStorage
+            Will store it forever 
+            key value pair 
+            Can remove it manually, or thru JS 
+
+        2. SessionStorage 
+            Will store data until you close the browser
+            key value pair 
+            Can remove it manually, or thru JS,
+            automatically wiped off when you close the browser
+
+    
+    
+    Geolocation
+    Drag and Drop  
+    ServiceWorker 
+    
+
+
+
+
+
