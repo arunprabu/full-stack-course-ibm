@@ -1,0 +1,269 @@
+/* to reset all browser styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* reset styles ends */
+
+/* custom styles */
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #607D8B;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+#mainNav, #secNav{
+    text-align: center;
+}
+
+/* nesting styles */
+#mainNav ul li, #secNav ul li{
+    list-style: none;  /* removes the bullet point */
+    display: inline; /* will display all li's in one line */
+    padding: 6px;
+}
+
+#mainNav ul li a{
+    color: #ffffff;
+}
+
+#secNav{
+    margin: 40px;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+.draggable {
+    width: 400px;
+    height: 80px;
+    text-align: center;
+    border: dashed 4px grey;
+}
+
+.draggableBox1 {
+    background: #2196F3;
+}
+
+.draggableBox2 {
+    background: #CFD8DC;
+}
+
+.multimedia video{
+    width: 40%;
+    height: 400px;
+    padding:5%;
+    text-align: center;
+}
+
+/* about page */
+.sidebar {
+    float: left;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    background: #2126F3;
+}
+.mainContainer{
+    float: left;
+    margin-left: 27%;
+    width: 73%;
+    text-align: left;
+}
+#sidebarNav{
+    padding: 24px;
+}
+#sidebarNav ul li{
+    line-height: 32px;
+}
+
+#sidebarNav ul li a{
+    color: #fff;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    padding: 20px;
+}
+h1{
+    font-size: 32px;
+    color:#37474F;
+}
+h2{
+    font-size: 28px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 22px;
+    color: #546E7A;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 16px;
+}
+button{
+    background: #2196F3;
+    padding: 30px 40px;
+    font-size: 28px;
+    margin: 20px;
+    color: #fff;
+    cursor: pointer;
+    border: 5px solid #2126F3;
+}
+/* for mouseover effect */
+button:hover{
+    background: #219613;
+}
+
+#dragNdrop{
+    padding: 20px;
+    margin:30px 30px;
+    overflow: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+.f-left{
+    float:left;
+}
+.f-right{
+    float: right;
+}
+.clearfloat{
+    clear: both;
+}
+
+.downloadsWrapper{
+    height: calc(100vh - 180px); /* view port height */
+}
+
+.downloadsWrapper table{
+    margin: 50px auto; /* will place the table in center while giving margin top and bottom 50px */
+    border: solid 1px #2126F3 !important;  
+}
+
+.downloadsWrapper table thead tr{
+    font-weight: bold;
+    background: #37474F;
+    color: #fff;
+}
+.downloadsWrapper table tr, .downloadsWrapper table tr td {
+    border: solid 1px #2126F3;
+    padding: 20px;
+}
+/* .downloadsWrapper table tbody tr:hover{
+    background: #CFD8DC;
+} */
+
+.downloadsWrapper table a{
+    padding: 10px;
+    text-decoration: none;  /* will remove the underline in link */
+}
+.downloadsWrapper table a:hover{
+    border-bottom: 2px solid #219613;
+    color: #219613;
+    background: #CFD8DC;
+}
+
+/* contact page */
+form{
+    text-align: left;
+}
+.formField{
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.formField label{
+    text-align: right;
+    width: 200px;
+    display: inline-block;
+}
+
+input, select, textarea{
+    padding: 7px 12px;
+    border: 1px solid #2196F3;
+    color: black;
+    font-size: 15px;
+}
+
+.resetBtn{
+    background: #fefefe;
+    padding: 10px 20px;
+    font-size: 22px;
+    margin: 0px;
+    color: rgb(5, 67, 184);
+    cursor: pointer;
+    border: 1px solid #2126F3;
+}
+.resetBtn:hover{
+    background: #CFD8DC;
+}
+
+.sendBtn{
+    background: #2126F3;
+    padding: 10px 20px;
+    font-size: 22px;
+    margin: 0px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #2126F3;
+}
+.sendBtn:hover{
+    background:#2126F3;
+}

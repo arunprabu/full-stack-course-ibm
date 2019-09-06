@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IBM Official Website by Arun</title>
+    
+    <!-- extenal stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        /* 
+            Internal Style 
+            =======
+        */
+    </style>
 </head>
 <body>
-    <header>
+    <header class="topHeader">
         <img src="images/ibm-logo.png" alt="IBM Logo">
-        <nav>
+        <nav id="mainNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -25,26 +34,29 @@
             type="search" name="searchInput"
             placeholder="Enter your search query here">
         </span>
-        <hr>
     </header>
 
     <main>
-        <h4>International Business Machines Corporation is an American multinational information technology company </h4>
+        <h4>International Business Machines Corporation is an <br><br>
+        American multinational information technology company </h4>
         <h1>Download Tools from IBM</h1>
         <button type="button">Download for Windows</button>
         <button type="button">Download for Mac</button>
 
         <h4>Watch a Short Video to understand more about IBM </h4>
         
-        <video width="400" height="300" autoplay>
-            <source src="videos/example.mp4" type="video/mp4">
-            Your browser doesn't support playing video
-        </video>
+        <div class="multimedia">
+            <video width="400" height="300" autoplay>
+                <source src="videos/example.mp4" type="video/mp4">
+                Your browser doesn't support playing video
+            </video>
 
-        <audio width="400" height="300" autoplay>
-            <source src="audios/example.mp3" type="audio/mp3">
-            Your browser doesn't support playing audio
-        </audio>
+            <audio width="400" height="300" autoplay>
+                <source src="audios/example.mp3" type="audio/mp3">
+                Your browser doesn't support playing audio
+            </audio>
+        </div>
+
 
         <p>Here comes SVG</p>
         <svg width="100" height="100">
@@ -82,7 +94,6 @@
         </script>
 
 
-
         <p>HTML5 API's</p>
         <p>Click the button to get your coordinates.</p>
 
@@ -109,26 +120,31 @@
             }
         </script>
 
-        <p>Drag and Drop API</p>
-
-        <p>Drag the image from here and drop in the box below</p>
-        <div id="div1" 
-            ondrop="drop(event)" 
-            ondragover="allowDrop(event)" 
-            style="background: yellow; width: 400px; height: 100px;">
-        <img id="drag1" 
-            src="images/ibm-logo.png" 
-            draggable="true" 
-            ondragstart="drag(event)" width="336" height="69">
-        </div>
         
-        <p>Drop the image here and then you can drag and drop in above box also</p>
-        <div id="div2" 
-            ondrop="drop(event)" 
-            ondragover="allowDrop(event)" 
-            style="background: red; 
-            border:solid 1px red; 
-            height:200px;"></div>
+        <div id="dragNdrop">
+            <h4>HTML5 Drag and Drop API</h4>
+
+            <div class="f-left">
+                <p>Drag the image from here and drop in the box below</p>
+                <div id="div1" 
+                    ondrop="drop(event)" 
+                    ondragover="allowDrop(event)" 
+                    class="draggableBox1 draggable">
+                    <img id="drag1" 
+                        src="images/ibm-logo.png" 
+                        draggable="true" 
+                        ondragstart="drag(event)" width="336" height="69">
+                </div>
+            </div>
+            
+            <div class="f-left">
+                <p>Drop the image here and then you can drag and drop in above box also</p>
+                <div id="div2" 
+                    ondrop="drop(event)" 
+                    ondragover="allowDrop(event)" 
+                    class="draggableBox2 draggable"></div>
+            </div>
+        </div>
 
         <script>
             function drag(evt) {
@@ -147,19 +163,20 @@
 
         </script>
 
-
     </main>
 
-    <footer>
+    <footer class="clearfloat">
         <!-- unordered list -->
-        <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="signin.html">Log In</a></li>
-            <li><a href="signup.html">Sign up</a></li>
+        <nav id="secNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="signin.html">Log In</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
         </nav>
         <p>Copyright &copy; 2019</p>
     </footer>

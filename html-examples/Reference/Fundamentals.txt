@@ -132,7 +132,72 @@ HTML 5 API's
     Geolocation
     Drag and Drop  
     ServiceWorker 
+
+====
+What is CSS?
+====
+Cascading Style Sheet 
+
+StyleSheet
+===
+will have Styles
+
+Style 
+====
+
+
+Syntax
+===
+*/ style */
+/* in the below css 'div' is a selector */
+div {
+    /* style defn */
+    /* property: property-value; */
+    background-color: red;
+}
+
+
+3 Types of Styles 
+====
+1. External Styles
+    Should be used in head tag 
+    <link rel="StyleSheet"
+2. Internal Styles
+    inside head tag and within style tag  
+    will apply in one page only 
+    page-specific styles 
+    <style>
+        body{
+            margin: 0;
+            background-color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+
+        header{
+            background-color: #607D8B;
+            border-bottom: 1px solid #cccccc;
+        }
+    </style>
     
+    Disadv: 
+        Styles Cannot be used in another page
+
+
+3. Inline Styles 
+    in style attribute 
+    Will apply on the Element
+    Adv: Ideal place for overriding any previous styles 
+    Disadv: Maintenance Issues, 
+            Style cannot be re-used, 
+            may have duplicate code style defn. 
+
+Selectors 
+====
+1. Elements Selectors ( div, h1, h6, p, input )
+2. Id Selectors  ( #history, #recruitment )
+3. Class Selectors ( .topHeader)
+4. Attribute Selectors (  [type='text'] )
+5. Psedo Selectors ( :hover )
 
 
 
